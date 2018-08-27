@@ -24,44 +24,7 @@
 
         public function cekLogin()
         {
-            // $this->load->library('form_validation');
-            // $this->form_validation->set_rules('username', 'Username', 'trim|required');
-		    // $this->form_validation->set_rules('password', 'Password', 'trim|required');
-
-            // $user = "admin";
-            // $pass = "admin";
-
-            // $user2 = "adminmavens";
-            // $pass2 = "adminmavens";
-            
-            // if ($this->form_validation->run() == FALSE) {
-                
-            //     $this->load->view('login/login');
-                
-            // } else {
-
-            //     if(isset($_POST["submit"])) {
-            //         if($_POST["username"] == $user && $_POST["password"] == $pass) {
-                        
-            //             redirect('Home','refresh');
-                        
-            //         }
-            //         elseif($_POST["username"] == $user2 && $_POST["password"] == $pass2) {
-                        
-            //             redirect('HomeMav','refresh');
-                        
-            //         } else {
-                        
-            //             $this->load->view('login/login');
-                        
-            //             $this->form_validation->set_message("cekDb", "Login Gagal Username dan Password tidak valid");
-            //             return false;
-                        
-            //         }
-            //     }
-            // }
-
-            // $this->load->library('form_validation');
+           
             
 		    $username=htmlspecialchars($this->input->post('username',TRUE),ENT_QUOTES);
             $password=htmlspecialchars($this->input->post('password',TRUE),ENT_QUOTES);
